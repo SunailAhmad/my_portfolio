@@ -1,0 +1,42 @@
+#about {
+    margin: 50px auto; /* Center the container horizontally */
+    text-align: center;
+    max-width: 800px; /* Added a maximum width for better readability */
+    background-color: #f7f7f7; /* Set a unique background color */
+}
+
+#about p {
+    margin-top: 10px;
+    margin-right: 20px; /* Reduced right margin for better spacing */
+    font-size: 18px;
+    color: black;
+    font-weight: 600;
+    text-align: justify; /* Applied justified text alignment for a cleaner look */
+}
+
+.about-me-head {
+    border: 2px solid green;
+    border-radius: 10px;
+    background-color: green;
+    color: black;
+    padding: 15px; /* Increased padding for better spacing */
+}
+
+#about h2 {
+    color: #333; /* Updated font color to a dark shade */
+    font-family: 'Roboto', sans-serif; /* Added Google Font 'Roboto' */
+    font-weight: 800; /* Increased font weight to 800 */
+    text-align: left;
+    font-size: 25px;
+    margin-top: 15px; /* Added margin-bottom for better separation from content */
+    opacity: 0; /* Set initial opacity to 0 for fade-in effect */
+    transform: translateY(20px); /* Move the element down initially */
+    animation: fadeInUp 1s ease-in-out forwards; /* Define the fadeInUp animation */
+}
+
+@keyframes fadeInUp {
+    to {
+        opacity: 1;
+        transform: translateY(0); /* Move the element back to its original position */
+    }
+}

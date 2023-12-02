@@ -1,0 +1,75 @@
+<! DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>My portfolio</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta content="" name="description" />
+        <meta content="" name="author" />
+        <link rel="stylesheet" href="/static/css/style.css">
+        <link rel="stylesheet" href="/static/css/utlities.css">
+        <link rel="stylesheet" href="/static/css/about-me.css">
+    </head>  
+
+
+<body>
+    <header>
+        <div class='head-section layout'>
+            <div class="nav-bar flex space-between align-center f-w-600">
+                <div class='logo f-w-700n latter-spacing'><span>Sunail's</span> portfolio</div>
+
+            <div class=nav-links>
+                <ul class="flex f-w-600">
+                    <li class="{% if request.path == '/' %}active{% endif %}"><a href="{% url 'home' %}">Home</a></li>
+                    <li class="{% if request.path == '/about-me/' %}active{% endif %}"><a href="{% url 'about-me' %}">About me</a></li>
+                    <li class="{% if request.path == '/projects/' %}active{% endif %}"><a href="{% url 'projects' %}">Projects</a></li>
+                    <li class="{% if request.path == '/contact/' %}active{% endif %}"><a href="{% url 'contact' %}">Contact</a></li>
+                </ul>
+                
+                
+                
+
+            </div>
+        
+        </div>
+            
+            </div>
+
+            </div>
+
+        </div>
+
+    </header>
+    <!-- about section -->
+    <main>
+        <section id="about">
+            <h1 class="f-w-700 center mt-4 about-me-head">About Me.</h1>
+            <p class="center mb-3 f-w-700">Hello there! I'm <span>SUNAIL AHMAD</span>, a seasoned Python developer passionate about crafting robust solutions at the intersection of web development and data science. With a wealth of experience under my belt, I thrive on turning complex challenges into elegant, scalable, and user-friendly applications.</p>
+        
+            <h2 class="f-w-700">Web Development Expertise:</h2>
+            <p>In the dynamic realm of web development, I've honed my skills in creating responsive and feature-rich web applications. From front-end technologies like HTML, CSS, and JavaScript to back-end frameworks like Django and Flask, I've navigated the intricacies of the web stack to deliver seamless user experiences.</p>
+        
+            <h2 class="f-w-700">Data Science Enthusiast:</h2>
+            <p>On the flip side, my fascination with data science has led me to explore the depths of data analysis, machine learning, and statistical modeling. Leveraging Python libraries such as NumPy, Pandas, and scikit-learn, I've tackled diverse data sets to derive actionable insights and build predictive models.</p>
+        
+            <h2 class="f-w-700">Problem Solver and Innovator:</h2>
+            <p>I thrive on solving complex problems, whether it's optimizing code for performance, architecting scalable systems, or uncovering meaningful patterns in data. My approach is rooted in a combination of analytical thinking, creativity, and a relentless pursuit of excellence.</p>
+        
+            <h2 class="f-w-700">Continuous Learner:</h2>
+            <p>Technology evolves at a rapid pace, and I embrace the opportunity to stay on the cutting edge. Whether it's adopting new frameworks, diving into emerging technologies, or keeping abreast of industry best practices, I'm committed to lifelong learning.</p>
+        
+            <h2 class="f-w-700">Collaborative Team Player:</h2>
+            <p>I understand the value of collaboration in achieving exceptional results. Having worked in diverse teams, I bring not only technical expertise but also effective communication and teamwork skills to the table.</p>
+        
+            <h2 class="f-w-700">Let's Connect:</h2>
+            <p>If you're looking for a developer who can bring a wealth of experience in web development and data science to your team, let's connect! I'm always open to new opportunities, exciting projects, and collaborations.</p>
+        
+            <p>Thank you for visiting my profile, and I look forward to the possibility of working together to create something extraordinary.</p>
+        </section>
+        
+
+</body>
+
+<html>
+
+

@@ -1,0 +1,60 @@
+<! DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>My portfolio</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta content="" name="description" />
+        <meta content="" name="author" />
+        <link rel="stylesheet" href="/static/css/style.css">
+        <link rel="stylesheet" href="/static/css/utlities.css">
+    </head>  
+
+
+<body>
+    <header>
+        <div class='head-section layout'>
+            <div class="nav-bar flex space-between align-center f-w-600">
+                <div class='logo f-w-700n latter-spacing'><span>Sunail's</span> portfolio</div>
+
+                <div class="nav-links">
+                    <ul class="flex f-w-600">
+                        <li class="{% if request.path == '/' %}active{% endif %}"><a href= "{% url 'home' %}">Home</a></li>
+                        <li class="{% if request.path == '/about-me/' %}active{% endif %}"><a href= "{% url 'about-me' %}">About me</a></li>
+                        <li class="{% if request.path == '/projects/' %}active{% endif %}"><a href= "{% url 'projects' %}">Projects</a></li>
+                        <li class="{% if request.path == '/contact/' %}active{% endif %}"><a href= "{% url 'contact' %}">Contact</a></li>
+                    </ul>
+                    
+                    
+                    
+                </div>
+                
+            <button class="btn"> Hire Me </button>
+        </div>
+        <!--content-->
+            <div class="content flex align-center">     
+                <div class="left-section flex2">
+                    <h4 class="uppercase latter-spacing">I'm Sunail Ahmad </h4>
+                    <h2 class="my-t-10 uppercase latter-spacing">web devloper <h2>
+                        <p class=""> I am a web developer with over<span> 3 years</span> of experience in building websites and applications.</p>
+                        <button class="btn btn2 my-t-20">Download Cv</button>
+                </div> 
+                <div class="right-section flex3">
+                    <img src="/static/images/sunail.jpg" alt="profile picture">
+
+                    
+                </div>          
+            </div>
+
+            </div>
+
+        </div>
+
+    </header>
+
+
+</body>
+
+<html>
+
+
